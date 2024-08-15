@@ -1,0 +1,65 @@
+.filter {
+    // Positioning
+    position: relative;
+    z-index: 0;
+    top: -10vh;
+
+    // Box-model
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    // Box-model
+    padding-inline: 1rem;
+    width: 100%;
+
+    // Grid
+    display: grid;
+    grid-template-areas:
+        '. . . . . . . . . . . .'
+        '. form form form form form form form form form form .'
+        '. . . . . . . . . . . .';
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+}
+
+.form {
+    // Border
+    border: 0.1rem solid black;
+
+    // Grid
+    grid-area: form;
+
+    // Box-model
+    display: flex;
+    padding: 2rem;
+
+    // Positioning
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.submitButton {
+    // Typography
+    text-decoration: none;
+    color: black;
+
+    // Border
+    border: 0.1rem solid black;
+    padding-block: 1rem;
+    padding-inline: 2rem;
+
+    // Visual
+    transition: background-color 300ms ease-in-out;
+
+    &:hover {
+        // Visual
+        background-color: #0000002c;
+        cursor: pointer;
+        transition: background-color 300ms ease-in-out;
+    }
+}

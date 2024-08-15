@@ -1,0 +1,59 @@
+.filter {
+    // Positioning
+    position: relative;
+    z-index: 0;
+
+    // Box-model
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    // Border
+    border: 0.1rem solid black;
+
+    // Box-model
+    padding: 2rem;
+    width: 60vw;
+}
+
+.form {
+    // Box-model
+    display: flex;
+    gap: 1rem;
+
+    // Positioning
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.formGroup {
+    // Box-model
+    display: flex;
+
+    // Positioning
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.submitButton {
+    // Typography
+    text-decoration: none;
+    color: black;
+
+    // Border
+    border: 0.1rem solid black;
+    padding-block: 1rem;
+    padding-inline: 2rem;
+
+    // Visual
+    transition: background-color 300ms ease-in-out;
+
+    &:hover {
+        // Visual
+        background-color: #0000002c;
+        cursor: pointer;
+        transition: background-color 300ms ease-in-out;
+    }
+}

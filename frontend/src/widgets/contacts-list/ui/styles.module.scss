@@ -1,0 +1,55 @@
+@import '../../../app/styles/mixins';
+@import '../../../app/styles/variables';
+
+.card {
+    // Positioning
+    position: relative;
+
+    // Box-model
+    width: 27.8rem;
+    height: 27.8rem;
+}
+
+.link {
+    // Positioning
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    // Box-model
+    height: 100%;
+    width: 100%;
+    padding: 1.4rem;
+
+    // Border
+    border: 0.1rem solid black;
+
+    // Typography
+    text-decoration: none;
+}
+
+.title {
+    // Box-model
+    display: flex;
+
+    // Typography
+    color: black;
+    text-wrap: nowrap;
+    font-weight: 500;
+    font-size: 1.3rem;
+    text-decoration: solid;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    list-style: none;
+}
+
+.item {
+    text-decoration: none;
+    color: black;
+}

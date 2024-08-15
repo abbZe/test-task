@@ -1,0 +1,36 @@
+@import '../../../app/styles/mixins';
+@import '../../../app/styles/variables';
+
+.contactsInfScroll {
+    // Positioning
+    position: relative;
+
+    // Box-model
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactsList {
+    // Grid
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 27.8rem);
+    grid-gap: 1rem;
+    justify-content: center;
+}
+
+.container {
+    // Box-model
+    padding-inline: $section-inline-padding-mobile;
+    width: 100%;
+}
+
+.title {
+    // Typography
+    font-size: 1.2rem;
+}
+
+.notFoundMessage {
+    // Typography
+    font-size: 1.3rem;
+}

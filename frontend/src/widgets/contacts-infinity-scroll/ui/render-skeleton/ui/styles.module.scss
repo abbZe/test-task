@@ -1,0 +1,33 @@
+@import '../../../../../app/styles/mixins';
+@import '../../../../../app/styles/variables';
+
+.eoCardSkeleton {
+    // Box-model
+    width: 20rem !important;
+    height: 20rem !important;
+    border-radius: 1rem !important;
+
+    @include desktopS {
+        // Box-model
+        width: 27.8rem !important;
+        height: 27.8rem !important;
+    }
+}
+
+.eoCard {
+    // Positioning
+    position: relative;
+
+    // Border
+    border-radius: 1rem;
+
+    // Box-model
+    width: 20rem;
+    height: 20rem;
+
+    @include desktopS {
+        // Box-model
+        width: 27.8rem;
+        height: 27.8rem;
+    }
+}

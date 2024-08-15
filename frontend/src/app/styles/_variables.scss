@@ -1,0 +1,22 @@
+//----------PALETTE-START-------------
+$root-bg: #fefffc;
+$root-text: #353535;
+
+$gray: #6b6b6b;
+$white: #fefffc;
+$black: #1a1a1a;
+//----------PALETTE-END-------------
+
+//----------FONTS-START-------------
+@font-face {
+    font-family: 'Inter';
+    src: url('../../shared/assets/fonts/inter.ttf');
+    font-display: swap;
+}
+
+$mainFont: 'Inter', sans-serif;
+//----------FONTS-END-------------
+
+$section-inline-padding-mobile: 1rem;
+$border-radius-mobile: 1rem;
+$border-radius-desktop: 1rem;

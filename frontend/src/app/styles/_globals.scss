@@ -1,0 +1,57 @@
+html {
+    // Positioning
+    position: relative;
+
+    // Typography
+    font-family: $mainFont;
+    color: $root-text;
+    font-size: 16px;
+
+    // Visual
+    background-color: $root-bg;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+
+    @include tablet {
+        font-size: 16px;
+    }
+
+    @include desktopS {
+        font-size: 16px;
+    }
+
+    @include desktopM {
+        font-size: 16px;
+    }
+
+    @include desktopL {
+        font-size: 16px;
+    }
+}
+
+* {
+    user-select: none;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    position: relative;
+    font-family: $mainFont;
+    font-size: 1rem;
+}
+
+section {
+    position: relative;
+}
+
+// Typography
+a {
+    text-underline-position: under !important;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}

@@ -1,0 +1,113 @@
+//----------- MEDIA QUERIES START------------
+@mixin max($width) {
+    @media only screen and (max-width: #{$width}px) {
+        @content;
+    }
+}
+
+@mixin min($width) {
+    @media only screen and (min-width: #{$width}px) {
+        @content;
+    }
+}
+//----------- MEDIA QUERIES END------------
+
+//-----------ELEMENTS START------------
+@mixin buttonMobile {
+    // Border
+    border: none;
+
+    // Visual
+    background-color: transparent;
+
+    // Box-model
+    padding-block: 0.7rem;
+    display: inline-block;
+    width: 100%;
+
+    // Typography
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-wrap: nowrap;
+    color: $black;
+
+    // Border
+    border: 0.1rem solid black;
+
+    &::first-letter {
+        // Typography
+        text-transform: capitalize;
+    }
+
+    // Content
+    @content;
+}
+
+@mixin buttonDesktop {
+    @include buttonMobile;
+
+    // Visual
+    cursor: pointer;
+    transition: background-color 300ms;
+
+    // Box-model
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    // Border
+    border: none;
+
+    &::first-letter {
+        // Typography
+        text-transform: capitalize;
+    }
+
+    &:hover {
+        // Visual
+        background-color: #1010100d;
+    }
+
+    // Content
+    @content;
+}
+//-----------ELEMENTS END------------
+
+//-----------DEVICE SIZES START------------
+@mixin mobile {
+    @include min(360) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @include min(600) {
+        @content;
+    }
+}
+
+@mixin desktopS {
+    @include min(1200) {
+        @content;
+    }
+}
+
+@mixin desktopM {
+    @include min(1920) {
+        @content;
+    }
+}
+
+@mixin desktopL {
+    @include min(2440) {
+        @content;
+    }
+}
+
+@mixin desktopXL {
+    @include min(3840) {
+        @content;
+    }
+}
+//-----------DEVICE SIZES END------------

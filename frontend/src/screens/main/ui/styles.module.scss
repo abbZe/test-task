@@ -1,0 +1,51 @@
+.linksSection {
+    // Box-model
+    display: flex;
+    height: 70vh;
+    width: 100vw;
+
+    // Positioning
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+
+.linksWrapper {
+    // Box-model
+    display: flex;
+
+    // Positioning
+    position: relative;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    // Border
+    border: 0.1rem solid black;
+
+    // Box-model
+    height: 30vh;
+    width: 50vw;
+}
+
+.link {
+    // Typography
+    text-decoration: none;
+    color: black;
+
+    // Border
+    border: 0.1rem solid black;
+    padding-block: 1rem;
+    padding-inline: 2rem;
+
+    // Visual
+    transition: background-color 300ms ease-in-out;
+
+    &:hover {
+        // Visual
+        background-color: #0000002c;
+        cursor: pointer;
+        transition: background-color 300ms ease-in-out;
+    }
+}

@@ -1,0 +1,1 @@
+export { useGetURL } from './hooks';

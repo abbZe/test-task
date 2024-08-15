@@ -1,0 +1,37 @@
+.header {
+    // Positioning
+    position: relative;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+
+    // Background
+    background-color: white;
+
+    // Box-model
+    width: 100%;
+    display: flex;
+}
+
+.startPageLink {
+    // Typography
+    text-decoration: none;
+    color: black;
+
+    // Border
+    border: 0.1rem solid black;
+    padding-block: 1rem;
+    padding-inline: 2rem;
+
+    // Visual
+    transition: background-color 300ms ease-in-out;
+
+    &:hover {
+        // Visual
+        background-color: #0000002c;
+        cursor: pointer;
+        transition: background-color 300ms ease-in-out;
+    }
+}
